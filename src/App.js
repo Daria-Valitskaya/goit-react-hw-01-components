@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Section from './components/Section';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Section title="Задание 1 - Профиль социальной сети"></Section>
+      <Section title="Задание 2 - Секция статистики"></Section>
+      <Section title="Задание 3 - Список друзей"></Section>
+      <Section title="Задание 4 - История транзакций"></Section>
     </div>
   );
 }
