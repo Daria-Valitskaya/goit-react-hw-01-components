@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from './default.jpg';
-const Profile = ({ name, tag, location, avatar = defaultImage, stats }) => {
+const Profile = ({ name, tag, location, avatar = defaultImage, followers, views, likes }) => {
   return (
     <div className="profile">
       <div className="description">
@@ -13,15 +13,15 @@ const Profile = ({ name, tag, location, avatar = defaultImage, stats }) => {
       <ul className="stats">
         <li>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className="quantity">{followers}</span>
         </li>
         <li>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className="quantity">{views}</span>
         </li>
         <li>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
     </div>
