@@ -14,7 +14,9 @@
   border-radius: 1000px;
   background-color: hsl(41, 66%, 78%);
   box-shadow: 0 0 20px #00000033;
-  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stats {
