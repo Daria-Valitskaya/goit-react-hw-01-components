@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
+
+function generateColor() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
 
 const Statistis = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title ? <h2 className="title">Upload stats</h2> : null}
+    <section className={styles.statistics}>
+      {title ? <h2 className={styles.title}>Upload stats</h2> : null}
 
-      <ul className="stat-list">
+      <ul className={styles.stat_list}>
         {stats.map(stat => (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
+          <li className={styles.item} key={stat.id} style={{ backgroundColor: generateColor() }}>
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
