@@ -8,7 +8,7 @@ function generateColor() {
 const Statistis = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      {title ? <h2 className={styles.title}>Upload stats</h2> : null}
+      {title && <h2 className={styles.title}>Upload stats</h2>}
 
       <ul className={styles.stat_list}>
         {stats.map(stat => (
